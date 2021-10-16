@@ -21,6 +21,12 @@ class HomeViewModel: NSObject {
         
         let url = formURL(pageCount: 1, pageLimit: 10)
         
+        if let photos = self.getSavedImages(key: url){
+            photosList.value = photos
+            isLoading.value = false
+            return
+        }
+        
         ApiManager.makeApiCall(with: url, method: .get) { (response, error) in
             if (error != nil) {
                 completion (nil, error!)
@@ -28,6 +34,7 @@ class HomeViewModel: NSObject {
             else {
                 if let data = response {
                     do {
+                        self.saveResponseLocally(data: data, key: url)
                         let decoded = try JSONDecoder().decode([PhotoElement].self, from: data)
                         completion (decoded, nil)
                     } catch {
@@ -42,6 +49,25 @@ class HomeViewModel: NSObject {
         return String(format: Constants.baseURL, pageCount,pageLimit) //pageIndex, limitPerPage
     }
     
+    func saveResponseLocally(data: Data?, key: String?) {
+        if let data = data, let key = key{
+            UserDefaults.standard.set(data, forKey: key)
+        }
+    }
+    
+    func getSavedImages(key: String?) -> [PhotoElement]? {
+        if let key = key{
+            if let data = UserDefaults.standard.value(forKey: key) as? Data{
+                do {
+                    let decoded = try JSONDecoder().decode([PhotoElement].self, from: data)
+                    return decoded
+                } catch {
+                    print("*** ERROR *** \(error)")
+                }
+            }
+        }
+        return nil
+    }
     // MARK:- Build View Models
     func buildViewModels() {
         var sectionViewModels = [SectionViewModel]()
