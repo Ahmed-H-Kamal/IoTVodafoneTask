@@ -14,9 +14,21 @@
 		8C55130A271A1C3E00F0D27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C551309271A1C3E00F0D27D /* Assets.xcassets */; };
 		8C55130D271A1C3E00F0D27D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C55130B271A1C3E00F0D27D /* LaunchScreen.storyboard */; };
 		8C551310271A1C3E00F0D27D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C55130F271A1C3E00F0D27D /* main.m */; };
+		8C551349271A1F0400F0D27D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C55133B271A1F0400F0D27D /* Extensions.swift */; };
+		8C55134A271A1F0400F0D27D /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C55133C271A1F0400F0D27D /* LoadingIndicator.swift */; };
+		8C55134B271A1F0400F0D27D /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C55133E271A1F0400F0D27D /* SectionModel.swift */; };
+		8C55134C271A1F0400F0D27D /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C55133F271A1F0400F0D27D /* CellConfigurable.swift */; };
+		8C55134D271A1F0400F0D27D /* SectionConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551340271A1F0400F0D27D /* SectionConfigurable.swift */; };
+		8C55134E271A1F0400F0D27D /* RowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551341271A1F0400F0D27D /* RowViewModel.swift */; };
+		8C55134F271A1F0400F0D27D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551342271A1F0400F0D27D /* Observable.swift */; };
+		8C551350271A1F0400F0D27D /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551343271A1F0400F0D27D /* SectionViewModel.swift */; };
+		8C551351271A1F0400F0D27D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551345271A1F0400F0D27D /* BaseViewController.swift */; };
+		8C551352271A1F0400F0D27D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551348271A1F0400F0D27D /* APIManager.swift */; };
+		C600D2DD4DA92D68CC2B36D9 /* Pods_IoTVodafoneTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C292D9B3F7F75FAF380591 /* Pods_IoTVodafoneTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C0630228CD6EBECAA01C80C /* Pods-IoTVodafoneTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoTVodafoneTask.release.xcconfig"; path = "Target Support Files/Pods-IoTVodafoneTask/Pods-IoTVodafoneTask.release.xcconfig"; sourceTree = "<group>"; };
 		8C5512FA271A1C3A00F0D27D /* IoTVodafoneTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IoTVodafoneTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5512FD271A1C3A00F0D27D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8C5512FE271A1C3A00F0D27D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +41,19 @@
 		8C55130C271A1C3E00F0D27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C55130E271A1C3E00F0D27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C55130F271A1C3E00F0D27D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C551336271A1EEC00F0D27D /* IoTVodafoneTask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IoTVodafoneTask-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C55133B271A1F0400F0D27D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8C55133C271A1F0400F0D27D /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		8C55133E271A1F0400F0D27D /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		8C55133F271A1F0400F0D27D /* CellConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
+		8C551340271A1F0400F0D27D /* SectionConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionConfigurable.swift; sourceTree = "<group>"; };
+		8C551341271A1F0400F0D27D /* RowViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowViewModel.swift; sourceTree = "<group>"; };
+		8C551342271A1F0400F0D27D /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		8C551343271A1F0400F0D27D /* SectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
+		8C551345271A1F0400F0D27D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8C551348271A1F0400F0D27D /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A6C292D9B3F7F75FAF380591 /* Pods_IoTVodafoneTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IoTVodafoneTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F0CEEA7E147AFF0B1E20EE /* Pods-IoTVodafoneTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoTVodafoneTask.debug.xcconfig"; path = "Target Support Files/Pods-IoTVodafoneTask/Pods-IoTVodafoneTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C600D2DD4DA92D68CC2B36D9 /* Pods_IoTVodafoneTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02115C561727C7315ECF186B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6C292D9B3F7F75FAF380591 /* Pods_IoTVodafoneTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8C5512F1271A1C3A00F0D27D = {
 			isa = PBXGroup;
 			children = (
 				8C5512FC271A1C3A00F0D27D /* IoTVodafoneTask */,
 				8C5512FB271A1C3A00F0D27D /* Products */,
+				E4B94A4E1C19B07C1EF4EE46 /* Pods */,
+				02115C561727C7315ECF186B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +97,7 @@
 		8C5512FC271A1C3A00F0D27D /* IoTVodafoneTask */ = {
 			isa = PBXGroup;
 			children = (
+				8C551354271A1F0A00F0D27D /* HelperClasses */,
 				8C5512FD271A1C3A00F0D27D /* AppDelegate.h */,
 				8C5512FE271A1C3A00F0D27D /* AppDelegate.m */,
 				8C551300271A1C3A00F0D27D /* SceneDelegate.h */,
@@ -72,8 +109,76 @@
 				8C55130B271A1C3E00F0D27D /* LaunchScreen.storyboard */,
 				8C55130E271A1C3E00F0D27D /* Info.plist */,
 				8C55130F271A1C3E00F0D27D /* main.m */,
+				8C551336271A1EEC00F0D27D /* IoTVodafoneTask-Bridging-Header.h */,
 			);
 			path = IoTVodafoneTask;
+			sourceTree = "<group>";
+		};
+		8C55133A271A1F0400F0D27D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8C55133B271A1F0400F0D27D /* Extensions.swift */,
+				8C55133C271A1F0400F0D27D /* LoadingIndicator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8C55133D271A1F0400F0D27D /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				8C55133E271A1F0400F0D27D /* SectionModel.swift */,
+				8C55133F271A1F0400F0D27D /* CellConfigurable.swift */,
+				8C551340271A1F0400F0D27D /* SectionConfigurable.swift */,
+				8C551341271A1F0400F0D27D /* RowViewModel.swift */,
+				8C551342271A1F0400F0D27D /* Observable.swift */,
+				8C551343271A1F0400F0D27D /* SectionViewModel.swift */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		8C551344271A1F0400F0D27D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C551345271A1F0400F0D27D /* BaseViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C551346271A1F0400F0D27D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8C551347271A1F0400F0D27D /* APIServices */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8C551347271A1F0400F0D27D /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				8C551348271A1F0400F0D27D /* APIManager.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		8C551354271A1F0A00F0D27D /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8C55133A271A1F0400F0D27D /* Helpers */,
+				8C551346271A1F0400F0D27D /* Network */,
+				8C55133D271A1F0400F0D27D /* Structure */,
+				8C551344271A1F0400F0D27D /* Views */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		E4B94A4E1C19B07C1EF4EE46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0F0CEEA7E147AFF0B1E20EE /* Pods-IoTVodafoneTask.debug.xcconfig */,
+				4C0630228CD6EBECAA01C80C /* Pods-IoTVodafoneTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C551313271A1C3E00F0D27D /* Build configuration list for PBXNativeTarget "IoTVodafoneTask" */;
 			buildPhases = (
+				053EFC7C19E9D0DDFBF0A980 /* [CP] Check Pods Manifest.lock */,
 				8C5512F6271A1C3A00F0D27D /* Sources */,
 				8C5512F7271A1C3A00F0D27D /* Frameworks */,
 				8C5512F8271A1C3A00F0D27D /* Resources */,
+				DAA051FB30603FDCBE18B15D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,6 +213,7 @@
 				TargetAttributes = {
 					8C5512F9271A1C3A00F0D27D = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -140,14 +248,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		053EFC7C19E9D0DDFBF0A980 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IoTVodafoneTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA051FB30603FDCBE18B15D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IoTVodafoneTask/Pods-IoTVodafoneTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IoTVodafoneTask/Pods-IoTVodafoneTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IoTVodafoneTask/Pods-IoTVodafoneTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8C5512F6271A1C3A00F0D27D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8C551305271A1C3A00F0D27D /* ViewController.m in Sources */,
+				8C551349271A1F0400F0D27D /* Extensions.swift in Sources */,
+				8C551350271A1F0400F0D27D /* SectionViewModel.swift in Sources */,
 				8C5512FF271A1C3A00F0D27D /* AppDelegate.m in Sources */,
+				8C55134B271A1F0400F0D27D /* SectionModel.swift in Sources */,
+				8C551351271A1F0400F0D27D /* BaseViewController.swift in Sources */,
+				8C55134F271A1F0400F0D27D /* Observable.swift in Sources */,
+				8C55134D271A1F0400F0D27D /* SectionConfigurable.swift in Sources */,
+				8C55134C271A1F0400F0D27D /* CellConfigurable.swift in Sources */,
+				8C55134A271A1F0400F0D27D /* LoadingIndicator.swift in Sources */,
 				8C551310271A1C3E00F0D27D /* main.m in Sources */,
+				8C551352271A1F0400F0D27D /* APIManager.swift in Sources */,
+				8C55134E271A1F0400F0D27D /* RowViewModel.swift in Sources */,
 				8C551302271A1C3A00F0D27D /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,9 +448,11 @@
 		};
 		8C551314271A1C3E00F0D27D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F0CEEA7E147AFF0B1E20EE /* Pods-IoTVodafoneTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IoTVodafoneTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,15 +461,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.IoTVodafone.IoTVodafoneTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IoTVodafoneTask/IoTVodafoneTask-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		8C551315271A1C3E00F0D27D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0630228CD6EBECAA01C80C /* Pods-IoTVodafoneTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IoTVodafoneTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +483,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.IoTVodafone.IoTVodafoneTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IoTVodafoneTask/IoTVodafoneTask-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

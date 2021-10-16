@@ -1,0 +1,6 @@
+framework module Pods_IoTVodafoneTask {
+  umbrella header "Pods-IoTVodafoneTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
