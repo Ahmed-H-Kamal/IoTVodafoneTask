@@ -89,6 +89,9 @@ class HomeViewModel: NSObject {
             }
             
             let model = PhotoItemViewModel(photoItem: value)
+            model.didSelectPhoto = { (photo) in
+                self.didSelectPhoto?(photo)
+            }
             listOfPhotos.append(model)
             
         }
@@ -105,6 +108,9 @@ class HomeViewModel: NSObject {
         let photoItem = PhotoElement(id: "-1", author: "This is AD", width: 0, height: 0, url: url, downloadURL: url)
         
         let adModel = PhotoItemViewModel(photoItem: photoItem)
+        adModel.didSelectPhoto = { (photo) in
+            self.didSelectPhoto?(photo)
+        }
         return adModel
     }
     

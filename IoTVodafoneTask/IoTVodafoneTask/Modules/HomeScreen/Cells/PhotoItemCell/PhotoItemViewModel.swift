@@ -10,6 +10,7 @@ import Foundation
 class PhotoItemViewModel: NSObject, RowViewModel, ViewModelPressible {
     
     var photoItem:PhotoElement?
+    var didSelectPhoto: ((PhotoElement) -> Void)?
 
     init(photoItem:PhotoElement){
         self.photoItem = photoItem
@@ -20,7 +21,9 @@ class PhotoItemViewModel: NSObject, RowViewModel, ViewModelPressible {
     }
     
     func cellPressed() {
-    
+        if let photo = photoItem{
+            self.didSelectPhoto?(photo)
+        }
     }
 
 }

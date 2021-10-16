@@ -31,6 +31,8 @@
 		8C55137E271B247400F0D27D /* PhotoItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C551375271B247400F0D27D /* PhotoItemViewCell.xib */; };
 		8C55137F271B247400F0D27D /* PhotoItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551376271B247400F0D27D /* PhotoItemViewCell.swift */; };
 		8C551380271B247400F0D27D /* PhotoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551377271B247400F0D27D /* PhotoItemViewModel.swift */; };
+		8C73281E271B7D1600D3EA65 /* PhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C73281D271B7D1600D3EA65 /* PhotoDetailsViewController.m */; };
+		8C732827271B99A300D3EA65 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C732826271B99A300D3EA65 /* ImageHelper.swift */; };
 		C600D2DD4DA92D68CC2B36D9 /* Pods_IoTVodafoneTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C292D9B3F7F75FAF380591 /* Pods_IoTVodafoneTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,9 @@
 		8C551375271B247400F0D27D /* PhotoItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoItemViewCell.xib; sourceTree = "<group>"; };
 		8C551376271B247400F0D27D /* PhotoItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItemViewCell.swift; sourceTree = "<group>"; };
 		8C551377271B247400F0D27D /* PhotoItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItemViewModel.swift; sourceTree = "<group>"; };
+		8C73281C271B7D1600D3EA65 /* PhotoDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoDetailsViewController.h; sourceTree = "<group>"; };
+		8C73281D271B7D1600D3EA65 /* PhotoDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailsViewController.m; sourceTree = "<group>"; };
+		8C732826271B99A300D3EA65 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		A6C292D9B3F7F75FAF380591 /* Pods_IoTVodafoneTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IoTVodafoneTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F0CEEA7E147AFF0B1E20EE /* Pods-IoTVodafoneTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoTVodafoneTask.debug.xcconfig"; path = "Target Support Files/Pods-IoTVodafoneTask/Pods-IoTVodafoneTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +139,7 @@
 			children = (
 				8C55133B271A1F0400F0D27D /* Extensions.swift */,
 				8C55133C271A1F0400F0D27D /* LoadingIndicator.swift */,
+				8C732826271B99A300D3EA65 /* ImageHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 			children = (
 				8C55136C271A5AC900F0D27D /* Constants */,
 				8C55135D271A4F7A00F0D27D /* HomeScreen */,
+				8C551399271B709600F0D27D /* DetailsScreen */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -246,6 +253,15 @@
 				8C551375271B247400F0D27D /* PhotoItemViewCell.xib */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C551399271B709600F0D27D /* DetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8C73281C271B7D1600D3EA65 /* PhotoDetailsViewController.h */,
+				8C73281D271B7D1600D3EA65 /* PhotoDetailsViewController.m */,
+			);
+			path = DetailsScreen;
 			sourceTree = "<group>";
 		};
 		E4B94A4E1C19B07C1EF4EE46 /* Pods */ = {
@@ -382,6 +398,7 @@
 				8C551361271A564A00F0D27D /* HomeViewController.swift in Sources */,
 				8C551351271A1F0400F0D27D /* BaseViewController.swift in Sources */,
 				8C55134F271A1F0400F0D27D /* Observable.swift in Sources */,
+				8C73281E271B7D1600D3EA65 /* PhotoDetailsViewController.m in Sources */,
 				8C55134D271A1F0400F0D27D /* SectionConfigurable.swift in Sources */,
 				8C55134C271A1F0400F0D27D /* CellConfigurable.swift in Sources */,
 				8C551369271A58B300F0D27D /* PhotoElement.swift in Sources */,
@@ -392,6 +409,7 @@
 				8C55134E271A1F0400F0D27D /* RowViewModel.swift in Sources */,
 				8C551302271A1C3A00F0D27D /* SceneDelegate.m in Sources */,
 				8C55136E271A5ADA00F0D27D /* Constants.swift in Sources */,
+				8C732827271B99A300D3EA65 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

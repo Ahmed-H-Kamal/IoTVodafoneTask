@@ -45,7 +45,7 @@ class HomeViewController: BaseViewController {
         }
         
         self.viewModel.didSelectPhoto = { (photo) in
-            
+            self.goToDetailsScreen(photo: photo)
         }
     }
     
@@ -73,7 +73,20 @@ class HomeViewController: BaseViewController {
         }
     }
 
-
+    func goToDetailsScreen(photo: PhotoElement) {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        if let controller = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController {
+//            self.navigationController?.pushViewController(controller, animated: true)
+//        }
+//
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "PhotoDetailsViewController") as? PhotoDetailsViewController {
+            controller.photo = photo
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+        
+        //PhotoDetailsViewController
+    }
 }
 
 

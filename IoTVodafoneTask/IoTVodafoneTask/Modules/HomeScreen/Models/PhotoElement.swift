@@ -7,13 +7,13 @@
 
 import Foundation
 
-class PhotoElement: Codable {
-    let id: String?
-    let author: String?
+class PhotoElement: NSObject, Codable {
+    @objc let id: String?
+    @objc let author: String?
     let width: Int?
     let height: Int?
-    let url: String?
-    let downloadURL: String?
+    @objc let url: String?
+    @objc let downloadURL: String?
 
     enum CodingKeys: String, CodingKey {
         case id = "id"
