@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,13 @@
 		8C551350271A1F0400F0D27D /* SectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551343271A1F0400F0D27D /* SectionViewModel.swift */; };
 		8C551351271A1F0400F0D27D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551345271A1F0400F0D27D /* BaseViewController.swift */; };
 		8C551352271A1F0400F0D27D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551348271A1F0400F0D27D /* APIManager.swift */; };
+		8C551361271A564A00F0D27D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551360271A564A00F0D27D /* HomeViewController.swift */; };
+		8C551365271A565D00F0D27D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551364271A565D00F0D27D /* HomeViewModel.swift */; };
+		8C551369271A58B300F0D27D /* PhotoElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551368271A58B300F0D27D /* PhotoElement.swift */; };
+		8C55136E271A5ADA00F0D27D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C55136D271A5ADA00F0D27D /* Constants.swift */; };
+		8C55137E271B247400F0D27D /* PhotoItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C551375271B247400F0D27D /* PhotoItemViewCell.xib */; };
+		8C55137F271B247400F0D27D /* PhotoItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551376271B247400F0D27D /* PhotoItemViewCell.swift */; };
+		8C551380271B247400F0D27D /* PhotoItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C551377271B247400F0D27D /* PhotoItemViewModel.swift */; };
 		C600D2DD4DA92D68CC2B36D9 /* Pods_IoTVodafoneTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C292D9B3F7F75FAF380591 /* Pods_IoTVodafoneTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +59,13 @@
 		8C551343271A1F0400F0D27D /* SectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewModel.swift; sourceTree = "<group>"; };
 		8C551345271A1F0400F0D27D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8C551348271A1F0400F0D27D /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		8C551360271A564A00F0D27D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8C551364271A565D00F0D27D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8C551368271A58B300F0D27D /* PhotoElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoElement.swift; sourceTree = "<group>"; };
+		8C55136D271A5ADA00F0D27D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8C551375271B247400F0D27D /* PhotoItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoItemViewCell.xib; sourceTree = "<group>"; };
+		8C551376271B247400F0D27D /* PhotoItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItemViewCell.swift; sourceTree = "<group>"; };
+		8C551377271B247400F0D27D /* PhotoItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItemViewModel.swift; sourceTree = "<group>"; };
 		A6C292D9B3F7F75FAF380591 /* Pods_IoTVodafoneTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IoTVodafoneTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F0CEEA7E147AFF0B1E20EE /* Pods-IoTVodafoneTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoTVodafoneTask.debug.xcconfig"; path = "Target Support Files/Pods-IoTVodafoneTask/Pods-IoTVodafoneTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +111,7 @@
 		8C5512FC271A1C3A00F0D27D /* IoTVodafoneTask */ = {
 			isa = PBXGroup;
 			children = (
+				8C55135C271A4F3A00F0D27D /* Modules */,
 				8C551354271A1F0A00F0D27D /* HelperClasses */,
 				8C5512FD271A1C3A00F0D27D /* AppDelegate.h */,
 				8C5512FE271A1C3A00F0D27D /* AppDelegate.m */,
@@ -171,13 +186,74 @@
 			path = HelperClasses;
 			sourceTree = "<group>";
 		};
+		8C55135C271A4F3A00F0D27D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8C55136C271A5AC900F0D27D /* Constants */,
+				8C55135D271A4F7A00F0D27D /* HomeScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8C55135D271A4F7A00F0D27D /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8C551370271B1A5600F0D27D /* Cells */,
+				8C551367271A583200F0D27D /* Models */,
+				8C551360271A564A00F0D27D /* HomeViewController.swift */,
+				8C551364271A565D00F0D27D /* HomeViewModel.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		8C551367271A583200F0D27D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C551368271A58B300F0D27D /* PhotoElement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C55136C271A5AC900F0D27D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8C55136D271A5ADA00F0D27D /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8C551370271B1A5600F0D27D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C551373271B247400F0D27D /* PhotoItemCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8C551373271B247400F0D27D /* PhotoItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				8C551374271B247400F0D27D /* Resources */,
+				8C551376271B247400F0D27D /* PhotoItemViewCell.swift */,
+				8C551377271B247400F0D27D /* PhotoItemViewModel.swift */,
+			);
+			path = PhotoItemCell;
+			sourceTree = "<group>";
+		};
+		8C551374271B247400F0D27D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C551375271B247400F0D27D /* PhotoItemViewCell.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E4B94A4E1C19B07C1EF4EE46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C0F0CEEA7E147AFF0B1E20EE /* Pods-IoTVodafoneTask.debug.xcconfig */,
 				4C0630228CD6EBECAA01C80C /* Pods-IoTVodafoneTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -241,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C55130D271A1C3E00F0D27D /* LaunchScreen.storyboard in Resources */,
+				8C55137E271B247400F0D27D /* PhotoItemViewCell.xib in Resources */,
 				8C55130A271A1C3E00F0D27D /* Assets.xcassets in Resources */,
 				8C551308271A1C3A00F0D27D /* Main.storyboard in Resources */,
 			);
@@ -298,17 +375,23 @@
 				8C551305271A1C3A00F0D27D /* ViewController.m in Sources */,
 				8C551349271A1F0400F0D27D /* Extensions.swift in Sources */,
 				8C551350271A1F0400F0D27D /* SectionViewModel.swift in Sources */,
+				8C551380271B247400F0D27D /* PhotoItemViewModel.swift in Sources */,
+				8C551365271A565D00F0D27D /* HomeViewModel.swift in Sources */,
 				8C5512FF271A1C3A00F0D27D /* AppDelegate.m in Sources */,
 				8C55134B271A1F0400F0D27D /* SectionModel.swift in Sources */,
+				8C551361271A564A00F0D27D /* HomeViewController.swift in Sources */,
 				8C551351271A1F0400F0D27D /* BaseViewController.swift in Sources */,
 				8C55134F271A1F0400F0D27D /* Observable.swift in Sources */,
 				8C55134D271A1F0400F0D27D /* SectionConfigurable.swift in Sources */,
 				8C55134C271A1F0400F0D27D /* CellConfigurable.swift in Sources */,
+				8C551369271A58B300F0D27D /* PhotoElement.swift in Sources */,
 				8C55134A271A1F0400F0D27D /* LoadingIndicator.swift in Sources */,
 				8C551310271A1C3E00F0D27D /* main.m in Sources */,
+				8C55137F271B247400F0D27D /* PhotoItemViewCell.swift in Sources */,
 				8C551352271A1F0400F0D27D /* APIManager.swift in Sources */,
 				8C55134E271A1F0400F0D27D /* RowViewModel.swift in Sources */,
 				8C551302271A1C3A00F0D27D /* SceneDelegate.m in Sources */,
+				8C55136E271A5ADA00F0D27D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
