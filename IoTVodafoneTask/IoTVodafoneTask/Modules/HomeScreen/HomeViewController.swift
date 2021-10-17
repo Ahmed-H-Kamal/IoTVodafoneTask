@@ -62,30 +62,25 @@ class HomeViewController: BaseViewController {
     
     func getPhotosType() {
         self.viewModel.isLoading.value = true
+        self.viewModel.isFetchingData = true
         self.viewModel.getPhotos() { (response, error) in
             if error == nil{
-                self.viewModel.photosList.value = response!
+                self.viewModel.photosList.value.append(contentsOf: response!)
                 self.viewModel.isLoading.value = false
-                self.viewModel.refreshControl.value.endRefreshing()
+                self.viewModel.isFetchingData = false
             }else{
                 self.viewModel.isLoading.value = false
+                self.viewModel.isFetchingData = false
             }
         }
     }
 
     func goToDetailsScreen(photo: PhotoElement) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        if let controller = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController {
-//            self.navigationController?.pushViewController(controller, animated: true)
-//        }
-//
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "PhotoDetailsViewController") as? PhotoDetailsViewController {
             controller.photo = photo
             self.navigationController?.pushViewController(controller, animated: true)
         }
-        
-        //PhotoDetailsViewController
     }
 }
 
@@ -129,6 +124,15 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         self.collectionView.collectionViewLayout = layout
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if(self.collectionView.contentOffset.y >= (self.collectionView.contentSize.height - self.collectionView.bounds.size.height)) {
+            if !self.viewModel.isFetchingData {
+                self.viewModel.isFetchingData = true
+                self.viewModel.pageCounter = self.viewModel.pageCounter + 1
+                getPhotosType()
+            }
+        }
+    }
 }
 
 

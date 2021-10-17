@@ -15,17 +15,17 @@ class HomeViewModel: NSObject {
     var pageCounter = 0
     var didSelectPhoto: ((PhotoElement) -> Void)?
     let refreshControl = Observable<UIRefreshControl>(UIRefreshControl())    
-    
+    var isFetchingData = false
     func getPhotos(completion: @escaping(_ photos:[PhotoElement]?, _ error: Error?) -> Void)
     {
         
-        let url = formURL(pageCount: 1, pageLimit: 10)
+        let url = formURL(pageCount: pageCounter, pageLimit: 10)
         
-        if let photos = self.getSavedImages(key: url){
-            photosList.value = photos
-            isLoading.value = false
-            return
-        }
+//        if let photos = self.getSavedImages(key: url){
+//            photosList.value = photos
+//            isLoading.value = false
+//            return
+//        }
         
         ApiManager.makeApiCall(with: url, method: .get) { (response, error) in
             if (error != nil) {
