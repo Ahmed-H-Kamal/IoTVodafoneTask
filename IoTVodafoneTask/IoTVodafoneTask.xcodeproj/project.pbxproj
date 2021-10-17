@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C23CF12271C7233007D26A4 /* IoTVodafoneTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C23CF11271C7233007D26A4 /* IoTVodafoneTaskTests.swift */; };
 		8C5512FF271A1C3A00F0D27D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5512FE271A1C3A00F0D27D /* AppDelegate.m */; };
 		8C551302271A1C3A00F0D27D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C551301271A1C3A00F0D27D /* SceneDelegate.m */; };
 		8C551305271A1C3A00F0D27D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C551304271A1C3A00F0D27D /* ViewController.m */; };
@@ -34,10 +35,25 @@
 		8C73281E271B7D1600D3EA65 /* PhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C73281D271B7D1600D3EA65 /* PhotoDetailsViewController.m */; };
 		8C732827271B99A300D3EA65 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C732826271B99A300D3EA65 /* ImageHelper.swift */; };
 		C600D2DD4DA92D68CC2B36D9 /* Pods_IoTVodafoneTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C292D9B3F7F75FAF380591 /* Pods_IoTVodafoneTask.framework */; };
+		F30CF2C9AF099468E3B58991 /* Pods_IoTVodafoneTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF77EA5E72EF8956B0EF6156 /* Pods_IoTVodafoneTaskTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C23CF14271C7233007D26A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C5512F2271A1C3A00F0D27D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C5512F9271A1C3A00F0D27D;
+			remoteInfo = IoTVodafoneTask;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4C0630228CD6EBECAA01C80C /* Pods-IoTVodafoneTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoTVodafoneTask.release.xcconfig"; path = "Target Support Files/Pods-IoTVodafoneTask/Pods-IoTVodafoneTask.release.xcconfig"; sourceTree = "<group>"; };
+		7A9AB2801EA65C86EEFCED22 /* Pods-IoTVodafoneTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoTVodafoneTaskTests.release.xcconfig"; path = "Target Support Files/Pods-IoTVodafoneTaskTests/Pods-IoTVodafoneTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C23CF0F271C7233007D26A4 /* IoTVodafoneTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IoTVodafoneTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C23CF11271C7233007D26A4 /* IoTVodafoneTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IoTVodafoneTaskTests.swift; sourceTree = "<group>"; };
+		8C23CF13271C7233007D26A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C5512FA271A1C3A00F0D27D /* IoTVodafoneTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IoTVodafoneTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5512FD271A1C3A00F0D27D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8C5512FE271A1C3A00F0D27D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,9 +89,19 @@
 		8C732826271B99A300D3EA65 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		A6C292D9B3F7F75FAF380591 /* Pods_IoTVodafoneTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IoTVodafoneTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F0CEEA7E147AFF0B1E20EE /* Pods-IoTVodafoneTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoTVodafoneTask.debug.xcconfig"; path = "Target Support Files/Pods-IoTVodafoneTask/Pods-IoTVodafoneTask.debug.xcconfig"; sourceTree = "<group>"; };
+		CF77EA5E72EF8956B0EF6156 /* Pods_IoTVodafoneTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IoTVodafoneTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F9F2016DACC86FF4163F4E /* Pods-IoTVodafoneTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoTVodafoneTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-IoTVodafoneTaskTests/Pods-IoTVodafoneTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8C23CF0C271C7233007D26A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30CF2C9AF099468E3B58991 /* Pods_IoTVodafoneTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C5512F7271A1C3A00F0D27D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,14 +117,25 @@
 			isa = PBXGroup;
 			children = (
 				A6C292D9B3F7F75FAF380591 /* Pods_IoTVodafoneTask.framework */,
+				CF77EA5E72EF8956B0EF6156 /* Pods_IoTVodafoneTaskTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C23CF10271C7233007D26A4 /* IoTVodafoneTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C23CF11271C7233007D26A4 /* IoTVodafoneTaskTests.swift */,
+				8C23CF13271C7233007D26A4 /* Info.plist */,
+			);
+			path = IoTVodafoneTaskTests;
 			sourceTree = "<group>";
 		};
 		8C5512F1271A1C3A00F0D27D = {
 			isa = PBXGroup;
 			children = (
 				8C5512FC271A1C3A00F0D27D /* IoTVodafoneTask */,
+				8C23CF10271C7233007D26A4 /* IoTVodafoneTaskTests */,
 				8C5512FB271A1C3A00F0D27D /* Products */,
 				E4B94A4E1C19B07C1EF4EE46 /* Pods */,
 				02115C561727C7315ECF186B /* Frameworks */,
@@ -109,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5512FA271A1C3A00F0D27D /* IoTVodafoneTask.app */,
+				8C23CF0F271C7233007D26A4 /* IoTVodafoneTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,6 +307,8 @@
 			children = (
 				C0F0CEEA7E147AFF0B1E20EE /* Pods-IoTVodafoneTask.debug.xcconfig */,
 				4C0630228CD6EBECAA01C80C /* Pods-IoTVodafoneTask.release.xcconfig */,
+				E7F9F2016DACC86FF4163F4E /* Pods-IoTVodafoneTaskTests.debug.xcconfig */,
+				7A9AB2801EA65C86EEFCED22 /* Pods-IoTVodafoneTaskTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -276,6 +316,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8C23CF0E271C7233007D26A4 /* IoTVodafoneTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C23CF18271C7233007D26A4 /* Build configuration list for PBXNativeTarget "IoTVodafoneTaskTests" */;
+			buildPhases = (
+				10709CB67AF69FEBF0BC340B /* [CP] Check Pods Manifest.lock */,
+				8C23CF0B271C7233007D26A4 /* Sources */,
+				8C23CF0C271C7233007D26A4 /* Frameworks */,
+				8C23CF0D271C7233007D26A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C23CF15271C7233007D26A4 /* PBXTargetDependency */,
+			);
+			name = IoTVodafoneTaskTests;
+			productName = IoTVodafoneTaskTests;
+			productReference = 8C23CF0F271C7233007D26A4 /* IoTVodafoneTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8C5512F9271A1C3A00F0D27D /* IoTVodafoneTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C551313271A1C3E00F0D27D /* Build configuration list for PBXNativeTarget "IoTVodafoneTask" */;
@@ -301,8 +360,13 @@
 		8C5512F2271A1C3A00F0D27D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					8C23CF0E271C7233007D26A4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 8C5512F9271A1C3A00F0D27D;
+					};
 					8C5512F9271A1C3A00F0D27D = {
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
@@ -323,11 +387,19 @@
 			projectRoot = "";
 			targets = (
 				8C5512F9271A1C3A00F0D27D /* IoTVodafoneTask */,
+				8C23CF0E271C7233007D26A4 /* IoTVodafoneTaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8C23CF0D271C7233007D26A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C5512F8271A1C3A00F0D27D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +436,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		10709CB67AF69FEBF0BC340B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IoTVodafoneTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DAA051FB30603FDCBE18B15D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,6 +478,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8C23CF0B271C7233007D26A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C23CF12271C7233007D26A4 /* IoTVodafoneTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C5512F6271A1C3A00F0D27D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,6 +517,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8C23CF15271C7233007D26A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C5512F9271A1C3A00F0D27D /* IoTVodafoneTask */;
+			targetProxy = 8C23CF14271C7233007D26A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		8C551306271A1C3A00F0D27D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -435,6 +545,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8C23CF16271C7233007D26A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7F9F2016DACC86FF4163F4E /* Pods-IoTVodafoneTaskTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = IoTVodafoneTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.IoTVodafoneTask.IoTVodafoneTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IoTVodafoneTask.app/IoTVodafoneTask";
+			};
+			name = Debug;
+		};
+		8C23CF17271C7233007D26A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A9AB2801EA65C86EEFCED22 /* Pods-IoTVodafoneTaskTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = IoTVodafoneTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.IoTVodafoneTask.IoTVodafoneTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IoTVodafoneTask.app/IoTVodafoneTask";
+			};
+			name = Release;
+		};
 		8C551311271A1C3E00F0D27D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -577,12 +733,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25YHMUQYM4;
 				INFOPLIST_FILE = IoTVodafoneTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.IoTVodafone.IoTVodafoneTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.IoTTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "IoTVodafoneTask/IoTVodafoneTask-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -593,6 +750,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8C23CF18271C7233007D26A4 /* Build configuration list for PBXNativeTarget "IoTVodafoneTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C23CF16271C7233007D26A4 /* Debug */,
+				8C23CF17271C7233007D26A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8C5512F5271A1C3A00F0D27D /* Build configuration list for PBXProject "IoTVodafoneTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -5,6 +5,10 @@ target 'IoTVodafoneTask' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  target 'IoTVodafoneTaskTests' do
+    inherit! :search_paths
+
+  end
   # Pods for IoTVodafoneTask
 
     pod 'Alamofire'
