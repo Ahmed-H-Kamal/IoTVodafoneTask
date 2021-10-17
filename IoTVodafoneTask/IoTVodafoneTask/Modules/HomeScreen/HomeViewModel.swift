@@ -21,11 +21,12 @@ class HomeViewModel: NSObject {
         
         let url = formURL(pageCount: pageCounter, pageLimit: 10)
         
-//        if let photos = self.getSavedImages(key: url){
-//            photosList.value = photos
-//            isLoading.value = false
-//            return
-//        }
+        if let photos = self.getSavedImages(key: url){
+            photosList.value.append(contentsOf: photos)
+            isLoading.value = false
+            isFetchingData = false
+            return
+        }
         
         ApiManager.makeApiCall(with: url, method: .get) { (response, error) in
             if (error != nil) {
